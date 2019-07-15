@@ -6,12 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.android.navigationpoc.R
+import com.android.navigationpoc.constants.AppConstants
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
 
     private val title by lazy(LazyThreadSafetyMode.NONE) {
-        arguments?.getString("title") ?: ""
+        arguments?.getString(AppConstants.TITLE) ?: ""
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/actionHome">
+
+    <fragment
+        android:id="@+id/actionHome"
+        android:name="com.android.navigationpoc.fragments.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+
+        <argument
+            android:name="title"
+            android:defaultValue="@string/title_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/actionSchools"
+        android:name="com.android.navigationpoc.fragments.SchoolsFragment"
+        android:label="@string/title_schools"
+        tools:layout="@layout/fragment_schools">
+
+        <argument
+            android:name="title"
+            android:defaultValue="@string/title_schools" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/actionProfile"
+        android:name="com.android.navigationpoc.fragments.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile">
+
+        <argument
+            android:name="title"
+            android:defaultValue="@string/title_profile" />
+
+    </fragment>
+
+</navigation>

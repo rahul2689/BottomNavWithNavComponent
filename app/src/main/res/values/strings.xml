@@ -5,4 +5,6 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_schools">Schools</string>
     <string name="title_profile">Profile</string>
+    <string name="show_user_details">Show User Details</string>
+    <string name="profile_details">Profile Details</string>
 </resources>

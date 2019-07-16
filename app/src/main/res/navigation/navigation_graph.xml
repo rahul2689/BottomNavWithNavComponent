@@ -38,6 +38,27 @@
             android:name="title"
             android:defaultValue="@string/title_profile" />
 
+        <action
+            android:id="@+id/openNotificationDetailsAction"
+            app:destination="@id/profileDetails"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@+id/actionProfile" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileDetails"
+        android:name="com.android.navigationpoc.fragments.ProfileDetailsFragment"
+        android:label="@string/profile_details"
+        tools:layout="@layout/fragment_profile_details">
+
+        <argument
+            android:name="title"
+            android:defaultValue="@string/profile_details" />
+
     </fragment>
 
 </navigation>

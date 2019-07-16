@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import com.android.navigationpoc.R
 import com.android.navigationpoc.constants.AppConstants
 import kotlinx.android.synthetic.main.fragment_profile.*
@@ -20,5 +21,9 @@ class ProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         tvProfileTitle.text = title
+        btnUserDetails.setOnClickListener {
+            val navController = Navigation.findNavController(view)
+            navController.navigate(R.id.openNotificationDetailsAction)
+        }
     }
 }

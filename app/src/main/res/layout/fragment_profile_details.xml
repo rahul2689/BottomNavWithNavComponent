@@ -9,16 +9,8 @@
         android:id="@+id/tvProfileTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/title_profile"
+        android:text="@string/profile_details"
         android:textColor="@android:color/black"
-        android:textSize="20sp" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnUserDetails"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:text="@string/show_user_details"
-        android:textColor="@android:color/black" />
+        android:textSize="28sp" />
 
 </LinearLayout>
